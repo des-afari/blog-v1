@@ -43,7 +43,7 @@ The blog utilizes a robust technical stack to power its frontend and backend fun
 
 3. **JWT (JSON Web Tokens):** JWT is utilized for authentication in the blog. It enables secure token-based authentication, allowing users to authenticate themselves and access protected routes.
 
-4. **PostgreSQL:** PostgreSQL is employed as the database management system for storing blog data. It is a robust and scalable open-source database that ensures reliable data storage and retrieval.
+4. **MySQL:** MySQL is employed as the database management system for storing blog data. It is a robust and scalable open-source database that ensures reliable data storage and retrieval.
 
 ## Conclusion
 The blog project demonstrates the synergy between React and FastAPI, resulting in a powerful and interactive blogging platform.By leveraging React's dynamic UI components and FastAPI's high-performance backend, users can enjoy a seamless and engaging experience while exploring articles, commenting, and liking. This project showcases the capabilities of modern web development technologies and provides a solid foundation for building similar feature-rich web applications.
