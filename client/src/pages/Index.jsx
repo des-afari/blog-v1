@@ -43,9 +43,9 @@ const Index = () => {
 	<div className='min-h-screen'>
 		<Banner />
 		<main className='p-8'>
-			{isLoading ? <div className={`${loaderStyle} h-[85vh]`}><Loader /></div> : <div className='min-h-[85vh] grid grid-cols-3 gap-x-6 gap-y-12'>
+			{isLoading ? <div className={`${loaderStyle} h-[85vh]`}><Loader /></div> : <div className='min-h-[85vh] grid grid-cols-3 gap-x-6 gap-y-0'>
 				{articles.map(data => (
-					<div key={data.id} onClick={handleClick} data-title={data.title} className='grid gap-y-3 cursor-pointer'>
+					<div key={data.id} onClick={handleClick} data-title={data.title} className='flex flex-col gap-y-3 cursor-pointer'>
 						<span> <img src={data.img_url} alt="article image" /> </span>
 						<div className='flex gap-x-2'>
 							{data.categories.map(item => (

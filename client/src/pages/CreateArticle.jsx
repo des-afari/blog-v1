@@ -87,7 +87,7 @@ const CreateArticle = () => {
     <form onSubmit={handleSubmit}>
         <input value={title} onChange={e => setTitle(e.target.value)} placeholder='Title' className='text-4xl font-bold'></input>
         <input type="text" maxLength={1000} value={description} onChange={e => setDescription(e.target.value)} placeholder='What is the article about?' />
-        <input type="text" onChange={handleImageChange} />
+        <input type="text" onChange={handleImageChange} placeholder='Image URL' />
         <div> {categories.map(item => (
             <span key={item.id} data-id={item.name}>
                 <p onClick={e => handleTagClick(e, item)}> {item.name} </p>

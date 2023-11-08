@@ -24,7 +24,7 @@ const SearchModal = forwardRef((props, ref) => {
 	const getFilteredArticles = async () => {
 		setIsLoading(true)
 		try {
-			const response = await axios.get(`/articles?q=${inputValue}&limit=${10}`)
+			const response = await axios.get(`/articles?query=${inputValue}&limit=${10}`)
 			setFilteredArticles(response.data)
 
 		} catch (error) {
